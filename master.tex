@@ -1,0 +1,49 @@
+\documentclass[oneside]{book}
+
+\usepackage{jupyterhandout}
+
+\title  {MOD101: Introductory module}
+\author {Josselin Noirel}
+\date   {4 Feb 2016}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+\maketitle
+
+\begin{trivlist}
+\item \textbf{Summary} This is a great module.
+\end{trivlist}
+
+\tableofcontents
+
+\clearpage
+
+\chapter{Preface}
+
+  \import{handout/}{1_introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\chapter{Introduction to Python}
+
+  \import{handout/2_Python/}{1_Jupyter}
+  \import{handout/2_Python/}{2_numerical_methods}
+% Trailing / is important ^
+
+\chapter{Algebraic magic}
+
+  \import{handout/3_algebra/}{1_linear_regression}
+  \import{handout/3_algebra/}{2_hash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\chapter{Acknowledgments}
+
+I'd like to thank the CNAM's JupyterHub Team!
+
+\end{document}

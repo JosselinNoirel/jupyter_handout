@@ -1,4 +1,8 @@
 *_files
 .ipynb_checkpoints
 *.tex
+*.aux
+*.log
+*.pdf
+*.toc
 !master.tex
