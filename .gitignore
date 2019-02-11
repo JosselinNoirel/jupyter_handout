@@ -1,0 +1,4 @@
+*_files
+.ipynb_checkpoints
+*.tex
+!master.tex
