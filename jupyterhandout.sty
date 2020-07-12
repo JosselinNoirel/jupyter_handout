@@ -1,9 +1,11 @@
 \RequirePackage{standalone}
 \RequirePackage{import}
+\RequirePackage{iftex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Adapted from the nbconvert output
 
+\RequirePackage[breakable]{tcolorbox}
 \RequirePackage[T1]{fontenc}
 % \RequirePackage{mathpazo}
 
@@ -220,9 +222,16 @@
 \def\PYZrb{]}
 
 % Exact colors from NB
-\definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
-\definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+\definecolor{incolor}{HTML}{303F9F}
+\definecolor{outcolor}{HTML}{D84315}
+\definecolor{cellborder}{HTML}{CFCFCF}
+\definecolor{cellbackground}{HTML}{F7F7F7}
 
+% Prompt
+\newcommand{\boxspacing}{\kern\kvtcb@left@rule\kern\kvtcb@boxsep}
+\newcommand{\prompt}[4]{
+      \ttfamily\llap{{\color{#2}[#3]:\hspace{3pt}#4}}\vspace{-\baselineskip}}
+  
 % Prevent overflowing lines due to hard-to-break entities
 % \sloppy
 
